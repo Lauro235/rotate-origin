@@ -58,21 +58,28 @@ html {
     height: 500px;
     width: 500px;
     background-color: lightgreen;
+    position: relative;
+    transform: rotate(90deg);
+    right: -2500px;
 }
 
 .innerbox {
+    outline: 2px solid black;
+    padding: 1em;
     height: 100%;
     width: 100%;
     background-color: lightskyblue;
-    transform: rotate(0deg);
-    transform-origin: top left;
-    transition: transform;
-    transition-duration: 1s;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+    position: relative;
+    left: -500px;
+    /* transition: transform;
+    transition-duration: 1s; */
 }
 
-.innerbox:hover {
+/* .innerbox:hover {
     transform: rotate(360deg);   
-}
+} */
 
 
 
